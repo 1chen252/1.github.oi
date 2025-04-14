@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻资讯</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #3498db, transparent);
+            margin: 20px 0;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .main-content {
+            flex: 2;
+        }
+        
+        .sidebar {
+            flex: 1;
+        }
+        
+        .news-article {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #ddd;
+        }
+        
+        .news-article:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        
+        .news-article h4 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .news-images {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .news-images img {
+            width: 50%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        
+        .news-images img:hover {
+            transform: scale(1.02);
+        }
+        
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        .sidebar h4 {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .hot-news {
+            margin-bottom: 25px;
+        }
+        
+        .hot-news a {
+            display: block;
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+            font-size: 16px;
+        }
+        
+        .hot-news a:hover {
+            color: #c0392b;
+            text-decoration: underline;
+        }
+        
+        .hot-news img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .hot-news p {
+            color: #95a5a6;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>每日新闻资讯</h1>
+        <hr>
+        
+        <div class="content-wrapper">
+            <div class="main-content">
+                <div class="news-article">
+                    <h4>科技创新推动数字经济高质量发展</h4>
+                    <div class="news-images">
+                        <img src="科技1.jpg" alt="科技会议现场">
+                        <img src="科技2.jpg" alt="数字技术应用">
+                    </div>
+                    <div class="article-meta">
+                        <p>记者：张科技</p>
+                        <p>发布时间：2023-06-18</p>
+                    </div>
+                </div>
+                
+                <div class="news-article">
+                    <h4>全球气候变暖引发极端天气频发</h4>
+                    <div class="news-images">
+                        <img src="天气1.jpg" alt="极端天气1">
+                        <img src="天气2.jpg" alt="极端天气2">
+                    </div>
+                    <div class="article-meta">
+                        <p>记者：李环保</p>
+                        <p>发布时间：2023-06-17</p>
+                    </div>
+                </div>
+                
+                <div class="news-article">
+                    <h4>文化产业发展助力乡村振兴战略</h4>
+                    <div class="news-images">
+                        <img src="文化1.jpg" alt="乡村文化1">
+                        <img src="文化2.jpg" alt="乡村文化2">
+                    </div>
+                    <div class="article-meta">
+                        <p>记者：王文化</p>
+                        <p>发布时间：2023-06-16</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <h4>热门推荐</h4>
+                
+                <div class="hot-news">
+                    <a href="#">人工智能技术在各行业的应用现状分析</a>
+                    <img src="2.jpg" alt="人工智能">
+                    <p>2023-06-15</p>
+                </div>
+                
+                <div class="hot-news">
+                    <a href="#">新能源车市场迎来爆发式增长，未来趋势如何？</a>
+                    <img src="1.jpg" alt="新能源车">
+                    <p>2023-06-14</p>
+                </div>
+                
+                <div class="hot-news">
+                    <a href="#">5G技术全面商用，将如何改变我们的生活方式？</a>
+                    <img src="3.jpg" alt="5G技术">
+                    <p>2023-06-13</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
